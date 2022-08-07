@@ -271,7 +271,6 @@ class AidlAnnotation : public AidlNode {
       std::map<std::string, std::shared_ptr<AidlConstantValue>> parameter_list,
       const Comments& comments);
 
-  AidlAnnotation(AidlAnnotation&&) = default;
   virtual ~AidlAnnotation() = default;
   bool CheckValid() const;
   bool CheckContext(TargetContext context) const;
